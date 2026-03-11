@@ -1,6 +1,7 @@
 # discriminant-pursuit
 
 [![License: BSD-3](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
+[![tests](https://github.com/LaubachLab/discriminant-pursuit/actions/workflows/tests.yml/badge.svg)](https://github.com/LaubachLab/discriminant-pursuit/actions/workflows/tests.yml)
 
 **Discriminant Pursuit via Wavelet Packets for Time-Series Feature Extraction**
 
