@@ -1,0 +1,7 @@
+# Core dependencies (mirrors pyproject.toml)
+numpy>=1.22
+scipy>=1.7
+scikit-learn>=1.0
+
+# Required for examples/notebooks
+matplotlib>=3.5

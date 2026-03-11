@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discriminant-pursuit"
+version = "0.1.0"
+description = "Discriminant Pursuit via Wavelet Packets for time-series feature extraction"
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Mark Laubach", email = "laubach@american.edu"},
+]
+keywords = [
+    "time series",
+    "feature extraction",
+    "wavelet packets",
+    "discriminant analysis",
+    "signal processing",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.7",
+    "scikit-learn>=1.0",
+]
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.5"]
+dev = ["matplotlib>=3.5", "pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/LaubachLab/discriminant-pursuit"
+Repository = "https://github.com/LaubachLab/discriminant-pursuit"
+"Bug Tracker" = "https://github.com/LaubachLab/discriminant-pursuit/issues"
+
+[tool.setuptools]
+py-modules = ["discr_pursuit"]
+
+[tool.pytest.ini_options]
+testpaths = ["test_discr_pursuit.py"]
