@@ -101,4 +101,6 @@ The original Matlab code was written by Jonathan Buckheit and David Donoho at St
 
 The software was developed with assistance from Claude Opus 4.5/4.6 (Anthropic) as an AI coding assistant. The nature and scope of assistance was refactoring, code generation for the plotting routines, and copy-editing. The author reviewed, edited, and validated all AI-assisted outputs and made all core design decisions.
 
+The software is freely available at https://github.com/LaubachLab/discriminant-pursuit and archived at https://doi.org/10.5281/zenodo.18983376.
+
 # References
