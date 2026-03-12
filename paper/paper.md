@@ -51,7 +51,7 @@ The extracted features are the projections of individual time series onto the se
 
 ![Discriminant pursuit applied to the Breiman Waveform-5000 dataset.\label{fig:waveform}](Wavelets_Waveform.svg)
 
-**Figure 1.** (A) Graphical depiction of the algorithm. (B) Examples of the top three wavelets (black) overlaid on the means of each class in the Breiman waveform dataset (blue, orange, green) and the temporal coverage of the discriminant basis functions (bottom row). Temporal coverage was calculated as the sum of the basis functions weighted by their amplitudes. (C) Feature distributions by class, calculated as the product of the wavelet coefficients and the waveform from each trial.
+**Figure 1.** (A) Graphical depiction of the algorithm. (B) Examples of the top three wavelets (black) overlaid on the means of each class in the Breiman waveform dataset (Class 0 = blue, Class 1 = orange, Class 2 = green) and the temporal coverage of the discriminant basis functions (bottom row). Temporal coverage was calculated as the sum of the basis functions weighted by their amplitudes. (C) Feature distributions by class, calculated as the product of the wavelet coefficients and the waveform from each trial.
 
 # Wavelet Packet Implementation
 
