@@ -38,7 +38,7 @@ Entropy-based best basis selection using wavelet packet dictionaries was develop
 
 An alternative to entropy-based best basis selection was developed using matching pursuit [@mallat1993matching]. This approach was adopted for the discriminant pursuit algorithm [@buckheit1995improved]. The method uses the wavelet packet decomposition as a dictionary and applies a greedy pursuit strategy to the class-mean contrasts. Discriminant pursuit demonstrated that a small number of wavelet packet basis functions can achieve competitive accuracy using linear discriminant analysis on some classic benchmark datasets, including the waveform dataset [@breiman1984classification]. The approach provides direct insight into the time-frequency structure that separates classes of time-series data.
 
-The discriminant pursuit algorithm works as follows, and is depicted in @fig:waveform:
+The discriminant pursuit algorithm works as follows, and is depicted in \autoref{fig:waveform}:
 
 1. Compute the trimmed mean signal for each class from the training data.
 2. Form all $g(g-1)/2$ pairwise contrasts between class means, where $g$ is the number of classes.
@@ -47,9 +47,9 @@ The discriminant pursuit algorithm works as follows, and is depicted in @fig:wav
 5. For each contrast, compute the projection of that contrast onto the selected basis function and subtract the component, deflating the dictionary.
 6. Repeat steps 4–5 for the desired number of basis functions.
 
-The extracted features are the projections of individual time series onto the selected basis functions. Because wavelet packets have compact support in both time and frequency, each feature has a direct physical interpretation: it measures the amplitude of a specific oscillatory pattern at a specific temporal location and frequency band. See @fig:waveform for an example of applying the method to the waveform dataset.
+The extracted features are the projections of individual time series onto the selected basis functions. Because wavelet packets have compact support in both time and frequency, each feature has a direct physical interpretation: it measures the amplitude of a specific oscillatory pattern at a specific temporal location and frequency band. See \autoref{fig:waveform} for an example of applying the method to the waveform dataset.
 
-![Discriminant pursuit applied to the Breiman Waveform-5000 dataset. (A) Graphical depiction of the algorithm. (B) Examples of the top three wavelets (black) overlaid on the means of each class in the Breiman waveform dataset (Class 0 = blue, Class 1 = orange, Class 2 = green) and the temporal coverage of the discriminant basis functions (bottom row). Temporal coverage was calculated as the sum of the basis functions weighted by their amplitudes. (C) Feature distributions by class, calculated as the product of the wavelet coefficients and the waveform from each trial.](Wavelets_Waveform.png){#fig:waveform}
+![Discriminant pursuit applied to the Breiman Waveform-5000 dataset. (A) Graphical depiction of the algorithm. (B) Examples of the top three wavelets (black) overlaid on the means of each class in the Breiman waveform dataset (Class 0 = blue, Class 1 = orange, Class 2 = green) and the temporal coverage of the discriminant basis functions (bottom row). Temporal coverage was calculated as the sum of the basis functions weighted by their amplitudes. (C) Feature distributions by class, calculated as the product of the wavelet coefficients and the waveform from each trial. \label{fig:waveform}](Wavelets_Waveform.png)
 
 # Wavelet Packet Implementation
 
