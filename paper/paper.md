@@ -49,9 +49,7 @@ The discriminant pursuit algorithm works as follows, and is depicted in @fig:wav
 
 The extracted features are the projections of individual time series onto the selected basis functions. Because wavelet packets have compact support in both time and frequency, each feature has a direct physical interpretation: it measures the amplitude of a specific oscillatory pattern at a specific temporal location and frequency band. See @fig:waveform for an example of applying the method to the waveform dataset.
 
-![Discriminant pursuit applied to the Breiman Waveform-5000 dataset.](Wavelets_Waveform.png){#fig:waveform}
-
-**Figure 1.** (A) Graphical depiction of the algorithm. (B) Examples of the top three wavelets (black) overlaid on the means of each class in the Breiman waveform dataset (Class 0 = blue, Class 1 = orange, Class 2 = green) and the temporal coverage of the discriminant basis functions (bottom row). Temporal coverage was calculated as the sum of the basis functions weighted by their amplitudes. (C) Feature distributions by class, calculated as the product of the wavelet coefficients and the waveform from each trial.
+![Discriminant pursuit applied to the Breiman Waveform-5000 dataset. (A) Graphical depiction of the algorithm. (B) Examples of the top three wavelets (black) overlaid on the means of each class in the Breiman waveform dataset (Class 0 = blue, Class 1 = orange, Class 2 = green) and the temporal coverage of the discriminant basis functions (bottom row). Temporal coverage was calculated as the sum of the basis functions weighted by their amplitudes. (C) Feature distributions by class, calculated as the product of the wavelet coefficients and the waveform from each trial.](Wavelets_Waveform.png){#fig:waveform}
 
 # Wavelet Packet Implementation
 
@@ -91,7 +89,7 @@ The package includes a test suite of 18 tests that verify:
 - Discriminant pursuit output structure, amplitude ordering, and classification accuracy on synthetic data
 - Scikit-learn wrapper `fit`/`transform` consistency, pipeline compatibility with both Ridge and Random Forest classifiers, and `get_params`/`set_params` for `clone()` and `GridSearchCV`
 
-Two tutorial notebooks demonstrate the full workflow. The first (`demo_waveform.ipynb`) applies discriminant pursuit to the Breiman Waveform-5000 benchmark dataset [@breiman1984classification], including classification with a Ridge classifier, basis function visualization, temporal coverage analysis, and feature distributions. The second (`demo_rf_cv.ipynb`) demonstrates repeated stratified k-fold cross-validation with a `DiscriminantPursuit` + `RandomForestClassifier` pipeline, with both Gini and permutation-based feature importance estimation []@strobl2007bias].
+Two tutorial notebooks demonstrate the full workflow. The first (`demo_waveform.ipynb`) applies discriminant pursuit to the Breiman Waveform-5000 benchmark dataset [@breiman1984classification], including classification with a Ridge classifier, basis function visualization, temporal coverage analysis, and feature distributions. The second (`demo_rf_cv.ipynb`) demonstrates repeated stratified k-fold cross-validation with a `DiscriminantPursuit` + `RandomForestClassifier` pipeline, with both Gini and permutation-based feature importance estimation [@strobl2007bias].
 
 # Acknowledgements
 
