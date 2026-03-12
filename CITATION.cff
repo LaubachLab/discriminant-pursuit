@@ -10,3 +10,8 @@ authors:
     affiliation: "American University, Department of Neuroscience"
 repository-code: "https://github.com/LaubachLab/discriminant-pursuit"
 license: BSD-3-Clause
+doi: 10.5281/zenodo.18983376
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18983376
+    description: "Zenodo archive of v0.1.0"
